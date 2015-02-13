@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC
+        "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="cacheEnabled" value="false"/>
+        <setting name="useGeneratedKeys" value="true"/>
+        <setting name="defaultExecutorType" value="REUSE"/>
+        <setting name="defaultStatementTimeout" value="600"/>
+    </settings>
+
+    <typeAliases>
+        <typeAlias alias="Boolean" type="java.lang.Boolean"/>
+        <typeAlias alias="Character" type="java.lang.Character"/>
+        <typeAlias alias="Byte" type="java.lang.Byte"/>
+        <typeAlias alias="Short" type="java.lang.Short"/>
+        <typeAlias alias="Integer" type="java.lang.Integer"/>
+        <typeAlias alias="Long" type="java.lang.Long"/>
+        <typeAlias alias="Float" type="java.lang.Float"/>
+        <typeAlias alias="Double" type="java.lang.Double"/>
+        <typeAlias alias="String" type="java.lang.String"/>
+        <typeAlias alias="Enum" type="java.lang.Enum"/>
+        <typeAlias alias="User" type="com.qunar.fresh.guowangsun.spring.bean.User"/>
+    </typeAliases>
+
+    <plugins>
+        <plugin interceptor="com.qunar.base.meerkat.orm.mybatis.support.StatementHandlerInterceptor"/>
+        <plugin interceptor="com.qunar.base.meerkat.orm.mybatis.support.ResultSetHandlerInterceptor"/>
+    </plugins>
+
+</configuration>

@@ -1,0 +1,5 @@
+com/qunar/fresh/guowangsun/spring/service/IUserService.class
+com/qunar/fresh/guowangsun/spring/dao/IUserDAO.class
+com/qunar/fresh/guowangsun/spring/controller/LoginController.class
+com/qunar/fresh/guowangsun/spring/service/impl/DBUserService.class
+com/qunar/fresh/guowangsun/spring/bean/User.class

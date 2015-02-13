@@ -1,0 +1,32 @@
+INSERT INTO user
+(
+  user_rtx,
+  user_name,
+  gender,
+  user_qnumber,
+  department,
+  position,
+  begin_date,
+  end_date,
+  leader_rtx,
+  leader_name,
+  hr_rtx,
+  hr_name,
+  work_status
+)
+VALUES
+  (
+    'a',
+    'a',
+    0,
+    'a',
+    'a',
+    'a',
+    '2015-01-01',
+    '2015-01-01',
+    'a',
+    'a',
+    'a',
+    'a',
+    1
+  );

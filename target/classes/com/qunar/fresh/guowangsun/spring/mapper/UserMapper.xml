@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qunar.fresh.guowangsun.spring.dao.IUserDAO">
+
+    <resultMap type="User" id="userMap">
+        <id column="id" property="id"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+    </resultMap>
+
+    <select id="find" parameterType="User" resultMap="userMap">
+        <![CDATA[SELECT id, username, password FROM tb_login WHERE username = #{username} AND password = #{password}]]>
+    </select>
+
+    <select id="findAll" parameterType="User" resultMap="userMap" resultType="java.util.ArrayList">
+        <![CDATA[SELECT id, username, password FROM tb_login]]>
+    </select>
+</mapper>
